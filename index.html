@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular Ui Router</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" media="screen" />
+    <style type="text/css" media="screen">
+      .navbar {
+          border-radius: 0;
+      }
+    </style>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="routerApp">
+    <!-- Navbar navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">Angular-Ui Router</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+      </ul>
+    </nav>
+    <!-- Main Content -->
+    <div class="container">
+      <div ui-view>
+        
+      </div>
+    </div>
+  </body>
+</html>
